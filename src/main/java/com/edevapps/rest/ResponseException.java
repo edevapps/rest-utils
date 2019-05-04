@@ -1,5 +1,5 @@
 /*
- *     Copyright (c) 2018, The Eduard Burenkov (http://edevapps.com)
+ *     Copyright (c) 2019, The Eduard Burenkov (http://edevapps.com)
  *
  *     Licensed under the Apache License, Version 2.0 (the "License");
  *     you may not use this file except in compliance with the License.
@@ -14,26 +14,26 @@
  *     limitations under the License.
  */
 
-package com.edevapps.rest.exception;
+package com.edevapps.rest;
 
-public class UnauthorizedResponseException extends ResponseException {
+public class ResponseException extends RuntimeException {
     
-    public UnauthorizedResponseException() {
+    public ResponseException() {
     }
     
-    public UnauthorizedResponseException(String message) {
+    public ResponseException(String message) {
         super(message);
     }
     
-    public UnauthorizedResponseException(String message, Throwable cause) {
+    public ResponseException(String message, Throwable cause) {
         super(message, cause);
     }
     
-    public UnauthorizedResponseException(Throwable cause) {
+    public ResponseException(Throwable cause) {
         super(cause);
     }
     
-    public UnauthorizedResponseException(String message, Throwable cause, boolean enableSuppression,
+    public ResponseException(String message, Throwable cause, boolean enableSuppression,
       boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }

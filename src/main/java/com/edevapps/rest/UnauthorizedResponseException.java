@@ -1,5 +1,5 @@
 /*
- *     Copyright (c) 2018, The Eduard Burenkov (http://edevapps.com)
+ *     Copyright (c) 2019, The Eduard Burenkov (http://edevapps.com)
  *
  *     Licensed under the Apache License, Version 2.0 (the "License");
  *     you may not use this file except in compliance with the License.
@@ -14,26 +14,26 @@
  *     limitations under the License.
  */
 
-package com.edevapps.rest.exception;
+package com.edevapps.rest;
 
-public class NotFoundResponseException extends ResponseException {
+public class UnauthorizedResponseException extends ResponseException {
     
-    public NotFoundResponseException() {
+    public UnauthorizedResponseException() {
     }
     
-    public NotFoundResponseException(String message) {
+    public UnauthorizedResponseException(String message) {
         super(message);
     }
     
-    public NotFoundResponseException(String message, Throwable cause) {
+    public UnauthorizedResponseException(String message, Throwable cause) {
         super(message, cause);
     }
     
-    public NotFoundResponseException(Throwable cause) {
+    public UnauthorizedResponseException(Throwable cause) {
         super(cause);
     }
     
-    public NotFoundResponseException(String message, Throwable cause, boolean enableSuppression,
+    public UnauthorizedResponseException(String message, Throwable cause, boolean enableSuppression,
       boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }

@@ -1,5 +1,5 @@
 /*
- *     Copyright (c) 2018, The Eduard Burenkov (http://edevapps.com)
+ *     Copyright (c) 2019, The Eduard Burenkov (http://edevapps.com)
  *
  *     Licensed under the Apache License, Version 2.0 (the "License");
  *     you may not use this file except in compliance with the License.
@@ -14,26 +14,26 @@
  *     limitations under the License.
  */
 
-package com.edevapps.rest.exception;
+package com.edevapps.rest;
 
-public class ResponseException extends RuntimeException {
+public class NotFoundResponseException extends ResponseException {
     
-    public ResponseException() {
+    public NotFoundResponseException() {
     }
     
-    public ResponseException(String message) {
+    public NotFoundResponseException(String message) {
         super(message);
     }
     
-    public ResponseException(String message, Throwable cause) {
+    public NotFoundResponseException(String message, Throwable cause) {
         super(message, cause);
     }
     
-    public ResponseException(Throwable cause) {
+    public NotFoundResponseException(Throwable cause) {
         super(cause);
     }
     
-    public ResponseException(String message, Throwable cause, boolean enableSuppression,
+    public NotFoundResponseException(String message, Throwable cause, boolean enableSuppression,
       boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
