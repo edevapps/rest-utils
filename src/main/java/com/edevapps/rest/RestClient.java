@@ -66,11 +66,11 @@ public class RestClient {
 
   private Client buildClient() {
     Client client = Client.create();
-    addFilters();
+    addFilters(client);
     return client;
   }
 
-  private void addFilters() {
+  private void addFilters(Client client) {
     if(this.user != null && this.password != null) {
       client.addFilter(new HTTPBasicAuthFilter(this.user, this.password));
     }
